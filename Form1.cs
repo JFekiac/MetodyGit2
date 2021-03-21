@@ -22,10 +22,20 @@ namespace MetodyGit2
             return datum.AddDays(100);
         }
 
+        //Metoda 2 - ukáže aktuální datum a čas
+        DateTime Metoda2(DateTime datum)
+        {
+            return datum = DateTime.Now;
+            
+        }
+
         private void button1_Click(object sender, EventArgs e)
         {
             DateTime dnes = DateTime.Today;
-            MessageBox.Show("Datum za 100 dní: " + Za100dni(dnes).ToShortDateString());
+            DateTime datum = DateTime.Now;
+            MessageBox.Show("Datum za 100 dní: " + Za100dni(dnes).ToShortDateString()); //Funguje
+            MessageBox.Show("Aktualni datum je: " + Metoda2(datum).ToShortDateString());
+
         }
     }
 }
