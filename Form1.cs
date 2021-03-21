@@ -34,7 +34,7 @@ namespace MetodyGit2
             DateTime dnes = DateTime.Today;
             DateTime datum = DateTime.Now;
             MessageBox.Show("Datum za 100 dní: " + Za100dni(dnes).ToShortDateString()); //Funguje
-            MessageBox.Show("Aktualni datum je: " + Metoda2(datum).ToShortDateString());
+            MessageBox.Show("Aktualni datum je: " + Metoda2(datum).ToShortDateString()); //Funguje
 
         }
     }
